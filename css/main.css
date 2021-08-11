@@ -25,8 +25,40 @@ For banner over lay add this class to your div
   </div>
 </div>
 */
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+header a{
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-right: 25px;
+  font-size: 15px;
+}
+header>div{
+  margin-left: 25px;
+}
+
 .banner__container {
   position: relative;
+  background-image: url(../imgs/melbourne.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px
+  
 }
 
 .banner__container:before {
@@ -38,3 +70,80 @@ For banner over lay add this class to your div
   background-color: rgba(0,0,0,0.4);
   content: "";
 }
+
+.text{
+  align-content: center;
+  padding-top: 70px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin-top: 150px;
+  margin-left:500px;
+}
+
+
+.banner__container .text h1{
+  font-size: 50px;
+  
+}
+
+.text a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color:white;
+  background-color: rgba(231, 31, 31, 0.911);
+  width: 15em;
+  height: 30px;
+  padding:8px;
+  margin: top 30px;
+  font-family: 'Nunito', Arial, sans-serif;
+  
+}
+
+.center .items{
+
+  padding: 20px 20px;
+  border-style: none solid none none;
+  border-width: 1px;
+  border-color: rgb(97, 96, 96);
+}
+
+.center{
+  background-color: #d1d4ce;
+  height: 150px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-top:40px;
+  display:flex;
+}
+
+.first_text{
+  padding: 10px;
+  border-width: 60px;
+  border: 1px solid #b7b9b4 ;
+}
+
+.first_items{
+  padding-right:3px;
+  width:100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.second_items{
+  padding-right:3px;
+  width:100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.container{
+  padding: 50px;
+}
+
+
+.feature h2{
+  font-size: 32px;
+}
+
